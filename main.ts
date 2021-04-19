@@ -12,7 +12,7 @@ export class MyChart extends Chart {
 
     new KubeService(this, 'service', {
       spec: {
-        type: 'NodePort',
+        type: 'LoadBalancer',
         ports: [ { port: 8080, targetPort: IntOrString.fromNumber(8080) } ],
         selector: label
       }
