@@ -1,1 +1,1 @@
-trigger prow job
+trigger post submit prow job
